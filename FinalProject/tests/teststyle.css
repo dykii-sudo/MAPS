@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+nav {
+    display: flex;
+}
+
+.navBtn {
+    margin: 0 5px;
+}
+
+.navA {
+    text-decoration: none;
+    color: black;
+}
+
+#body {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+}
+
+#signIn {
+    margin: 20px 0;
+}
+
+.signBtn {
+    margin-top: 10px;
+}
+
+#regulations {
+    display: block;
+    margin: 20px 0;
+}
+
+#parkingLayout {
+    margin: 20px 0;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.parking-section {
+    margin-bottom: 20px;
+}
+
+.parking-grid {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+.cars {
+    grid-template-columns: repeat(11, 50px);
+}
+
+.motorcycles {
+    grid-template-columns: repeat(9, 50px);
+}
+
+.bicycles {
+    grid-template-columns: repeat(8, 50px);
+}
+
+.parking-slot {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.taken {
+    background-color: red;
+}
+
+.reserved {
+    background-color: orange;
+}
+
+.legend {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.legend p {
+    margin: 5px 0;
+}
+
+.legend .taken {
+    background-color: red;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.legend .reserved {
+    background-color: orange;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.footerLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}

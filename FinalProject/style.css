@@ -1,0 +1,377 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+  
+  body {
+/* 3. Add accessible line-height */
+ line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  color:#f1f0e9;
+  background-image: linear-gradient(to right, #2d336b, #a9b5df);
+}
+  
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+  
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+  
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+  
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+  
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.logo{
+  position:absolute;  
+  margin-left:30px;
+}
+#hParks{
+  display:flex;
+  position: absolute;
+  top:27px;
+  left:150px;
+}
+header{
+  background-color: #7886c7;
+  height:100px;
+}
+nav{
+  display:flex;
+  justify-content: center;
+  padding:20px;
+}
+.navBtn{
+  display:flex;
+  background-color: #2d336b;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top:15px;
+  margin-right: 20px;
+  margin-left:20px;
+  font-size: 20px;
+}
+.navA:link{
+  color:antiquewhite;
+  text-decoration:none;
+}
+.navA:visited{
+  color:antiquewhite;
+  text-decoration:none;
+}
+.welcome{
+  padding-top:100px;
+  padding-left: 100px;
+  padding-bottom:201px;
+  font-size: 4.5em;
+  font-family:Impact;
+}
+#signIn{
+  display:flex;
+  position:absolute;
+  top:200px;
+  right:0px;
+  background-color:#7886c7;
+  border:10px #2d336b solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top:15px;
+  padding-bottom:45px;
+  padding-left:40px;
+  padding-right:100px;
+}
+.signBtn{
+  font-size:20px;
+  border:1px #2e5b71 solid;
+  border-radius: 15px;
+  color:#f1f0e9;
+  background-color: #2e5b71;
+  padding-left:35px;
+  padding-right:35px;
+  margin-left:80px;
+}
+.signBtn>a:link{
+  text-decoration: none;
+}
+.signBtn>a:visited{
+  text-decoration: none;
+}
+a:link{
+  text-decoration:underline;
+  color:#f1f0e9;
+}
+footer{
+  background-color: #2d336b;
+  display:flex;
+  justify-content:space-evenly;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size:15px;
+}
+.footerLogo{
+  width:35px;
+  height:35px;
+}
+#regulations{
+  position:absolute;
+  top:550px;
+  color:#f1f0e9;
+  border:1px #8c52ff solid;
+  background-color: #8c52ff;
+  border-radius:15px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: 15px;
+}
+#parking{
+  display:flex;
+  position:absolute;
+  height:300px;
+  width:500px;
+  top:25%;
+  right:50px;
+  border-radius:15px;
+}
+#parking:hover{
+  filter:blur(8px);
+  transition: 0.5s;
+}
+#signUp{
+  display:flex;
+  position:fixed;
+  top:100px;
+  right:400px;
+  background-color:#7886c7;
+  border:10px #2d336b solid;
+  border-radius: 15px;
+  padding-top:25px;
+  padding-bottom:45px;
+  padding-left:40px;
+  padding-right:80px;
+  font-size:20px;
+}
+#aboutUs{
+  position:absolute;
+  border:10px #2d336b solid;
+  background-color:#7886c7;
+  border-radius:15px;
+  font-size:20px;
+  text-align:center;
+  padding-top:25px;
+  padding-right: 20px;
+  padding-left:20px;
+  height:320px;
+  width:530px;
+  right:390px;
+  top:180px;
+}
+#parkingRegulations{
+  position:absolute;
+  border:10px #2d336b solid;
+  background-color:#7886c7;
+  border-radius:15px;
+  font-size:20px;
+  text-align:left;
+  padding-top:25px;
+  padding-left:10px;
+  padding-right:20px;
+  height:370px;
+  width:530px;
+  right:390px;
+  top:150px;
+  list-style-position: inside;
+}
+#reservation{
+  display:flex;
+  position:fixed;
+  top:100px;
+  right:400px;
+  background-color:#7886c7;
+  border:10px #2d336b solid;
+  border-radius: 15px;
+  padding-top:25px;
+  padding-bottom:45px;
+  padding-left:40px;
+  padding-right:80px;
+  font-size:20px;
+}
+#reservationBtn{
+  position:absolute;
+  top:710px;
+  right:635px;
+  color:#f1f0e9;
+  border:1px #8c52ff solid;
+  background-color: #8c52ff;
+  border-radius:15px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: 15px;
+  font-size:20px;
+}
+#reservationBtn>a:link{
+  text-decoration: none;
+  color:#f1f0e9
+}
+#reservationBtn>a:visited{
+  text-decoration: none;
+  color:#f1f0e9
+}
+
+/*PARKING*/
+#parkingLayout{
+  text-align: center;
+
+}
+#parkingLayout>h1,h2,h3,h4,h5,h6{
+  font-size:21.5px;
+  
+}
+.parking-section {
+  margin-bottom: 20px;
+}
+
+.parking-grid {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+}
+
+.cars {
+  grid-template-columns: repeat(11, 65px);
+  margin-bottom:15px;
+}
+
+.motorcycles {
+  grid-template-columns: repeat(9, 65px);
+  margin-bottom: 15px;
+}
+
+.bicycles {
+  grid-template-columns: repeat(8, 65px);
+  margin-bottom:15px;
+}
+
+.parking-slot {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.taken {
+  background-color: red;
+}
+
+.reserved {
+  background-color: orange;
+}
+
+.legend {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.legend p {
+  margin: 5px 0;
+}
+
+.legend .taken {
+  background-color: red;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.legend .reserved {
+  background-color: orange;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.links:visited{
+  color:#f1f0e9;
+}
+.links:link{
+  color:#f1f0e9;
+}
+input, select{
+  border-radius: 10px;
+  background-color: #2d336b;
+  color:#f1f0e9;
+}
+#takenPage{
+  position:absolute;
+  top:250px;
+  right:550px;
+  color:#f1f0e9;
+  border:1px #8c52ff solid;
+  background-color: #8c52ff;
+  border-radius:15px;
+  padding:15px;
+  font-size:20px;
+}
+#backToParking{
+  position:absolute;
+  top:700px;
+  right:590px;
+  color:#f1f0e9;
+  border:1px #8c52ff solid;
+  background-color: #8c52ff;
+  border-radius:15px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: 15px;
+  font-size:20px;
+}
+#backToParking>a:link{
+  text-decoration: none;
+  color:#f1f0e9
+}
+#backToParking>a:visited{
+  text-decoration: none;
+  color:#f1f0e9
+}
+a:link{
+  text-decoration:none;
+  color:#f1f0e9;
+}
+a:visited{
+  text-decoration:none;
+  color:#f1f0e9;
+} 

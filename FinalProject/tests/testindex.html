@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teststyle.css">
+    <title>Parking Space</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <img src="/assets/mahslogo.png" alt="logo" class="logo" width="100px" height="100px;">
+        <h1 id="hParks">PARKS</h1>
+        <nav>
+            <button class="navBtn"><a class="navA" href="InHome.html">Home</a></button>
+            <button class="navBtn"><a class="navA" href="aboutUs.html">About us</a></button>
+            <button class="navBtn"><a class="navA" href="index.html">Log Out</a></button>
+        </nav>
+    </header>
+
+    <!--BODY-->
+    <main>
+        <section id="parkingLayout">
+            <div id="cars">
+                <h3>Cars</h3>
+                <h4>School Services</h4>
+                <div class="parking-grid cars">
+                    <div class="parking-slot taken">1<br>Taken</div>
+                    <div class="parking-slot">2</div>
+                    <div class="parking-slot taken">3<br>Taken</div>
+                    <div class="parking-slot">4</div>
+                    <div class="parking-slot">5</div>
+                    <div class="parking-slot reserved">6<br>Reserved</div>
+                    <div class="parking-slot">7</div>
+                    <div class="parking-slot">8</div>
+                    <div class="parking-slot">9</div>
+                    <div class="parking-slot">10</div>
+                    <div class="parking-slot">11</div>
+                </div>
+            </div>
+
+            <div id="motorcycles">
+                <h3>Motorcycles</h3>
+                <div class="parking-grid motorcycles">
+                    <div class="parking-slot taken">1<br>Taken</div>
+                    <div class="parking-slot">2</div>
+                    <div class="parking-slot">3</div>
+                    <div class="parking-slot taken">4<br>Taken</div>
+                    <div class="parking-slot taken">5<br>Taken</div>
+                    <div class="parking-slot">6</div>
+                    <div class="parking-slot reserved">7<br>Reserved</div>
+                    <div class="parking-slot">8</div>
+                    <div class="parking-slot">9</div>
+                </div>
+            </div>
+
+            <div id="bicycles">
+                <h3>Bicycles</h3>
+                <div class="parking-grid bicycles">
+                    <div class="parking-slot taken">1<br>Taken</div>
+                    <div class="parking-slot taken">2<br>Taken</div>
+                    <div class="parking-slot">3</div>
+                    <div class="parking-slot">4</div>
+                    <div class="parking-slot taken">5<br>Taken</div>
+                    <div class="parking-slot reserved">6<br>Reserved</div>
+                    <div class="parking-slot">7</div>
+                    <div class="parking-slot">8</div>
+                </div>
+            </div>
+
+            <div class="legend">
+                <p>No color = Available</p>
+                <p><span class="taken">Taken</span> = Taken</p>
+                <p><span class="reserved">Reserved</span> = Reserved (Could change)</p>
+            </div>
+            <p>You are reserved at: B2-2</p>
+        </section>
+
+        <button id="reservationBtn"><a href="reservation.html">Get Reservation</a></button>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <img class="footerLogo" alt="fb logo" src="assets/fbLogo.png">
+        <span class="info">
+            <a href="https://www.facebook.com/MelchoraAquinoHS">Melchora Aquino High School</a><br>
+        </span>
+
+        <img src="assets/mailLogo.png" alt="Email logo" class="footerLogo" >
+        <span class="info">
+            <a href="mailto:305863@deped.gov.ph" class="links">MAHS Email</a><br>
+        </span>
+    </footer>
+</body>
+</html>
